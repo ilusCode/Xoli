@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Xoli</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">IlusCode</string>
+    <string name="nav_header_subtitle">isw_efm@icloud.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_crear">Crear</string>
+    <string name="menu_eliminar">Eliminar</string>
+    <string name="menu_creditos">Creditos</string>
+    <string name="menu_modificar">Modificar</string>
+    <string name="menu_listar">Listar</string>
+
+    <string name="s_id">Id</string>
+    <string name="s_nombre">Nombre</string>
+    <string name="s_fechaIngreso">Fecha de Ingreso</string>
+    <string name="s_sexo">Sexo</string>
+    <string name="s_habitat">Habitat</string>
+    <string name="s_alimentacion">Alimentacion</string>
+    <string name="s_guardar">Guardar</string>
+    <string name="s_limpiar">Limpiar</string>
+    <string name="s_buscar">Buscar</string>
+    <string name="s_eliminar">Eliminar</string>
+
+    <string name="s_clasificador">Clasificador</string>
+    <string name="s_especie">Especie</string>
+
+    <string name="s_nuevo_animal">Nuevo Animal</string>
+    <string name="s_mostrar_animal">Mostrar Animales</string>
+<string name="s_eliminar_animal">Borrar Animal</string>
+<string name="s_modificar_animal">Modificar Animal</string>
+
+</resources>
