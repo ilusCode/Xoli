@@ -1,5 +1,6 @@
 package com.iluscode.xoli.ui.crear;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -69,7 +71,48 @@ public class CrearFragment extends Fragment {
         clase.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String opcion=String.valueOf(clase.getSelectedItemId());
+                int op= Integer.parseInt(opcion);
+                System.out.println(opcion);
+                if (op==0){
 
+                }
+                //
+                if (op==1){
+                    final ArrayAdapter<CharSequence> adapter1=ArrayAdapter.createFromResource(getContext(),R.array.o1,android.R.layout.simple_spinner_item);
+                    tipo.setAdapter(adapter1);
+                    a=adapter.getItem(1).toString();
+                    tipo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                            String opcion=String.valueOf(clase.getSelectedItemId());
+                            int op= Integer.parseInt(opcion);
+                            System.out.println(opcion);
+                            b="";
+                            switch (op){
+                                case 0:
+                                    break;
+                                case 1:
+                                    b=adapter1.getItem(1).toString();;;
+                                    Toast.makeText(getContext(),"1",Toast.LENGTH_SHORT).show();
+                                    break;
+                                case 2:
+                                    b=adapter1.getItem(2).toString();;;
+                                    Toast.makeText(getContext(),"2",Toast.LENGTH_SHORT).show();
+                                    break;
+                                case 3:
+                                    b=adapter1.getItem(3).toString();;;
+                                    Toast.makeText(getContext(),"3",Toast.LENGTH_SHORT).show();
+                                    break;
+                                case 4:
+                                    b=adapter1.getItem(4).toString();;;
+                                    Toast.makeText(getContext(),"4",Toast.LENGTH_SHORT).show();
+                                    break;
+                            }
+
+                        }
+                    });
+                }
             }
         });
 
